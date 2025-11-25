@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
+import logoSoluciona from "@/assets/logo-soluciona.jpg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,14 +35,12 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">S</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">Soluciona</span>
-                <span className="text-xs text-muted-foreground">Locação</span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src={logoSoluciona} 
+                alt="Soluciona Locação" 
+                className="h-14 w-auto"
+              />
             </div>
 
             {/* Navigation - Hidden on mobile */}
