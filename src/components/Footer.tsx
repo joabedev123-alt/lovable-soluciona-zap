@@ -1,4 +1,5 @@
 import { MapPin, Mail, Phone, Instagram } from "lucide-react";
+import logoSoluciona from "@/assets/logo-soluciona.jpg";
 
 const Footer = () => {
   return (
@@ -7,14 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">S</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold">Soluciona</span>
-                <span className="text-xs opacity-80">Locação</span>
-              </div>
+            <div className="mb-4">
+              <img 
+                src={logoSoluciona} 
+                alt="Soluciona Locação" 
+                className="h-12 w-auto mb-3"
+              />
             </div>
             <p className="text-sm opacity-80">
               Soluções práticas em locação de banheiros químicos para obras e eventos em Apucarana e região.
